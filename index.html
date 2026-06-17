@@ -1626,10 +1626,7 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
       if(!STORE.has(el)){STORE.set(el,el.innerHTML);} 
       el.innerHTML = isEN ? readEN(el) : STORE.get(el);
     });
-    // navigation labels (built dynamically) — uses data-nav / data-nav-en
-    document.querySelectorAll('[data-nav-pt-label]').forEach(function(a){
-      a.textContent = isEN ? (a.getAttribute('data-nav-en-label')||a.getAttribute('data-nav-pt-label')) : a.getAttribute('data-nav-pt-label');
-    });
+    // (dot navigation labels are now translated via the data-en attribute on the inner <span>)
     document.documentElement.lang = isEN?'en':'pt-BR';
     var btn=document.getElementById('langToggle');
     if(btn) btn.classList.toggle('en', isEN);
@@ -1643,17 +1640,16 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
   document.addEventListener('DOMContentLoaded', function(){
     // Patch nav rebuild to keep both langs (if nav uses data-nav for label):
     setTimeout(function(){
-      document.querySelectorAll('nav a, .dots a, .navdots a, [data-section-link]').forEach(function(a){
-        var t=a.textContent.trim();
-        if(t && !a.hasAttribute('data-nav-pt-label')){
-          a.setAttribute('data-nav-pt-label', t);
-          // try to find corresponding EN from data-nav-en on the target section
-          var href=a.getAttribute('href')||'';
-          if(href.startsWith('#')){
-            var tgt=document.querySelector(href);
-            if(tgt && tgt.getAttribute('data-nav-en')){
-              a.setAttribute('data-nav-en-label', tgt.getAttribute('data-nav-en'));
-            }
+      document.querySelectorAll('#dots a').forEach(function(a){
+        var sp=a.querySelector('span'); if(!sp) return;
+        if(sp.hasAttribute('data-en')) return;
+        var pt=sp.textContent.trim();
+        var href=a.getAttribute('href')||'';
+        if(href.startsWith('#')){
+          var tgt=document.querySelector(href);
+          if(tgt){
+            var en=tgt.getAttribute('data-nav-en')||pt;
+            sp.setAttribute('data-en', en);
           }
         }
       });
