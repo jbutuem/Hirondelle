@@ -593,6 +593,64 @@ body.modal-open{overflow:hidden}
 /* storyboard: show full frame, caption below */
 .sb-hero img{aspect-ratio:auto !important;object-fit:contain !important;width:100%;display:block;background:#fff}
 .sb-hero figcaption{position:static !important;background:rgba(6,29,63,.92) !important;color:#fff}
+
+/* ===== Eventos & Mídia · novos componentes ===== */
+.pp{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:12.5px;font-weight:800;color:var(--ultra);background:rgba(10,59,147,.07);border:1px solid rgba(10,59,147,.14);border-radius:30px;padding:6px 14px}
+.pp b{color:var(--orange);font-weight:900}
+.pp.gl{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.22);color:#fff}
+.pp.gl b{color:#FFB65C}
+.evcal .card{display:flex;flex-direction:column}
+.evcal .pil{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,var(--ultra),var(--sky));border-radius:20px;padding:4px 12px;margin-bottom:12px;align-self:flex-start}
+.evcal .meta{font-size:12.5px;color:var(--sky);font-weight:700;margin-bottom:10px}
+.evcal .how{font-size:13.5px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px dashed rgba(10,59,147,.16)}
+.evcal .how b{color:var(--ultra)}
+.rangecard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+.rangecard h3{font-size:16px;color:var(--ultra);margin-bottom:6px}
+.rangecard .sub{font-size:12.5px;color:var(--muted);margin-bottom:18px}
+.evr{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.evr .nm{flex:0 0 218px;font-size:13px;font-weight:700;color:var(--ink)}
+.evr .trk{flex:1;height:14px;border-radius:8px;background:rgba(10,59,147,.07);position:relative;overflow:hidden}
+.evr .fill{position:absolute;top:0;bottom:0;border-radius:8px;background:linear-gradient(90deg,var(--sky),var(--ultra));width:0;transition:width 1.1s cubic-bezier(.16,1,.3,1)}
+.evr .vv{flex:0 0 128px;font-size:12px;font-weight:900;color:var(--ultra);text-align:right}
+.gchart{display:flex;align-items:flex-end;gap:26px;height:190px;margin-top:10px}
+.gchart .grp{flex:1;display:flex;flex-direction:column;height:100%;justify-content:flex-end}
+.gchart .bars{display:flex;align-items:flex-end;gap:6px;height:100%}
+.gchart .gb{flex:1;border-radius:6px 6px 0 0;height:0;transition:height 1.1s cubic-bezier(.16,1,.3,1)}
+.gchart .gb.e{background:#7FB7E8}.gchart .gb.r{background:var(--orange)}.gchart .gb.a{background:#fff}
+.gchart .gl2{font-size:11px;color:rgba(255,255,255,.85);font-weight:700;text-align:center;margin-top:9px}
+.cleg2{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.9);margin-top:16px}
+.cleg2 span{display:flex;align-items:center;gap:7px}
+.cleg2 i{width:11px;height:11px;border-radius:3px;display:inline-block}
+.scn{position:relative;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:28px;text-align:center}
+.scn .t{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:#bfe0ff}
+.scn .v{font-size:34px;font-weight:900;color:#fff;margin:10px 0 4px}
+.scn .m{font-size:12.5px;color:rgba(255,255,255,.8)}
+.scn.hot{border-color:var(--orange);box-shadow:0 18px 50px -18px rgba(240,138,0,.55)}
+.scn .flag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;border-radius:20px;padding:4px 14px}
+.sumrow{display:flex;align-items:center;gap:14px;padding:13px 4px;border-bottom:1px solid rgba(10,59,147,.09)}
+.sumrow .nm{flex:1;font-size:14.5px;font-weight:700;color:var(--ink)}
+.sumrow .nm small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.sumrow .vv{font-size:14.5px;font-weight:900;color:var(--ultra);white-space:nowrap}
+.chip{font-size:10px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:20px;padding:4px 10px;white-space:nowrap}
+.chip.ok{background:rgba(136,186,20,.15);color:#4e7000}
+.chip.est{background:rgba(10,59,147,.08);color:var(--ultra)}
+.chip.cf{background:rgba(240,138,0,.14);color:#9c5a00}
+.hzn{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;position:relative}
+.hzn .hh{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--sky)}
+.hzn .vr{font-size:30px;font-weight:900;color:var(--ultra);margin:10px 0 6px;line-height:1.1}
+.hzn p{font-size:13.5px;color:var(--muted)}
+.hzn .mini{height:9px;border-radius:6px;background:rgba(10,59,147,.08);overflow:hidden;margin:16px 0 8px}
+.hzn .mini i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--sky),var(--ultra));width:0;transition:width 1.1s cubic-bezier(.16,1,.3,1)}
+.hzn.hot{border-color:var(--orange);box-shadow:0 22px 60px -24px rgba(240,138,0,.5)}
+.hzn .flag{position:absolute;top:-12px;left:26px;background:var(--orange);color:#fff;font-size:10.5px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;border-radius:20px;padding:4px 14px}
+.notecard{margin-top:26px;background:rgba(10,59,147,.045);border:1px dashed rgba(10,59,147,.22);border-radius:16px;padding:22px 26px;font-size:13.5px;color:var(--muted)}
+.notecard b{color:var(--ultra)}
+.kittable{width:100%;border-collapse:collapse;font-size:13.5px}
+.kittable th{text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sky);padding:10px 8px;border-bottom:2px solid rgba(10,59,147,.15)}
+.kittable td{padding:10px 8px;border-bottom:1px solid rgba(10,59,147,.08);color:var(--ink)}
+.kittable td.v{font-weight:800;color:var(--ultra);white-space:nowrap}
+.kittable tr.tt td{font-weight:900;color:var(--ultra);border-top:2px solid rgba(10,59,147,.2)}
+@media(max-width:860px){.evr .nm{flex-basis:120px}.evr .vv{flex-basis:90px;font-size:11px}.gchart{gap:10px;height:150px}}
 </style>
 </head>
 <body>
@@ -1052,10 +1110,58 @@ body.modal-open{overflow:hidden}
 <h2 class="title reveal d1" data-en="Where the brand becomes experience.">Onde a marca vira vivência.</h2>
 <p class="lead reveal d2" data-en="Events in fitting venues that bring the France–Brazil bridge to life and reward the partners at the top of the chain.">Eventos em locais pertinentes que materializam a ponte França–Brasil e recompensam os parceiros do topo da cadeia.</p>
 <div class="grid g2" style="margin-top:42px">
-<div class="card reveal d1"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"></path><path d="M3 7v10l9 4 9-4V7"></path></svg></div><h3 data-en="" event"="" launch="" le="" vol"="">Evento de lançamento "Le Vol"</h3><p data-en="A dinner-experience at an iconic address (e.g., a gastronomic space in SP/Rio), with an anchor chef, guided tasting and the film reveal. An ultra-selective invitation for distributors and ambassador bakeries.">Jantar-experiência em endereço icônico (ex.: espaço gastronômico em SP/Rio), com chef-âncora, degustação guiada e a revelação do filme. Convite ultra-seletivo para distribuidores e padarias-embaixadoras.</p></div>
-<div class="card reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M2 22s4-2 10-2 10 2 10 2M5 12l7-9 7 9M8 12v6M16 12v6M12 12v6"></path></svg></div><h3 data-en="Imersão exclusiva na Casa + Narandiba">Viagem à fábrica na França</h3><p data-en="The grand relationship prize: taking distributor owners and standout bakeries to visit Lesaffre in France and the Baking Center. An origin experience that becomes a story told for years.">O grande prêmio de relacionamento: levar donos de distribuidoras e padarias de destaque para conhecer a Lesaffre na França e o Baking Center. Vivência de origem que vira história contada por anos.</p></div>
+<div class="card reveal d1"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"></path><path d="M3 7v10l9 4 9-4V7"></path></svg></div><h3 data-en="" event"="" launch="" le="" vol"="">Evento de lançamento "Le Vol"</h3><p data-en="A dinner-experience at an iconic address (e.g., a gastronomic space in SP/Rio), with an anchor chef, guided tasting and the film reveal. An ultra-selective invitation for distributors and ambassador bakeries.">Jantar-experiência em endereço icônico (ex.: espaço gastronômico em SP/Rio), com chef-âncora, degustação guiada e a revelação do filme. Convite ultra-seletivo para distribuidores e padarias-embaixadoras.</p><span class="pp" data-en="80–120 guests <b>R$ 60–120 mil</b>">80–120 convidados <b>R$ 60–120 mil</b></span></div>
+<div class="card reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M2 22s4-2 10-2 10 2 10 2M5 12l7-9 7 9M8 12v6M16 12v6M12 12v6"></path></svg></div><h3 data-en="Imersão exclusiva na Casa + Narandiba">Viagem à fábrica na França</h3><p data-en="The grand relationship prize: taking distributor owners and standout bakeries to visit Lesaffre in France and the Baking Center. An origin experience that becomes a story told for years.">O grande prêmio de relacionamento: levar donos de distribuidoras e padarias de destaque para conhecer a Lesaffre na França e o Baking Center. Vivência de origem que vira história contada por anos.</p><span class="pp" data-en="Group of 8–12 <b>R$ 220–380 mil</b> (R$ 25–35 mil/person)">Grupo de 8–12 <b>R$ 220–380 mil</b> (R$ 25–35 mil/pessoa)</span></div>
 <div class="card reveal d3"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"></path><path d="M8 13h8M8 17h5"></path></svg></div><h3 data-en="Bread Symposium">Bread Symposium</h3><p data-en="Integrated presence at the symposium: a signed &quot;safe travels / great event&quot; letter, branded materials and an L'Hirondelle moment within the technical program.">Presença integrada ao simpósio: carta "boa viagem / bom evento" assinada, materiais de marca e um momento L'Hirondelle dentro da programação técnica.</p></div>
-<div class="card reveal d4"><div class="icrc"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div><h3 data-en="Roadshow / regional workshops">Roadshow / workshops regionais</h3><p data-en="A circuit of masterclasses with the ambassadors in the regions of selected distributors — generating demonstration, local media and direct relationships with bakers.">Circuito de masterclasses com os embaixadores nas praças dos distribuidores selecionados — gera demonstração, mídia local e relacionamento direto com padeiros.</p></div>
+<div class="card reveal d4"><div class="icrc"><svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div><h3 data-en="Roadshow / regional workshops">Roadshow / workshops regionais</h3><p data-en="A circuit of masterclasses with the ambassadors in the regions of selected distributors — generating demonstration, local media and direct relationships with bakers.">Circuito de masterclasses com os embaixadores nas praças dos distribuidores selecionados — gera demonstração, mídia local e relacionamento direto com padeiros.</p><span class="pp" data-en="R$ 8–15 mil per stop · 6–8 stops <b>R$ 55–100 mil</b>">R$ 8–15 mil por praça · 6–8 praças <b>R$ 55–100 mil</b></span></div>
+</div>
+
+<!-- Calendário nacional · 4 pilares -->
+<div style="margin-top:52px">
+<h3 class="reveal" data-en="National calendar · 4 pillars" style="font-size:24px;font-weight:900;color:var(--ultra);margin-bottom:8px">Calendário nacional · 4 pilares</h3>
+<p class="reveal d1" data-en="Where and how the brand enters the circuit — with entry path and estimated investment per action. Estimates built from public references; final quotes to be confirmed with each organizer." style="font-size:15px;color:var(--muted);max-width:760px;margin-bottom:26px">Onde e como a marca entra no circuito — com caminho de entrada e investimento estimado por ação. Estimativas construídas a partir de referências públicas; cotação final a confirmar com cada organizador.</p>
+<div class="grid g2 evcal">
+<div class="card reveal d1">
+<span class="pil" data-en="Pillar 1 · Trade">Pilar 1 · Trade</span>
+<h3>FIPAN — Feira Internacional de Panificação</h3>
+<div class="meta" data-en="July · Expo Center Norte, SP · own booth “The Crossing” · post-launch edition">Julho · Expo Center Norte, SP · estande próprio “A Travessia” · edição pós-lançamento</div>
+<p data-en="The biggest fair in Latin America: 4 days, 450+ exhibitors, 60k visitors, Bread Arena and the baking championship. The trade stage par excellence.">A maior feira da América Latina: 4 dias, 450+ expositores, 60 mil visitantes, Bread Arena e o campeonato de panificação. O palco de trade por excelência.</p>
+<div class="how" data-en="<b>Confirmed presence on the calendar:</b> the brand already lives the fair — L'Hirondelle debuts with the “The Crossing” immersive booth in the post-launch edition."><b>Presença confirmada no calendário:</b> a marca já vive a feira — a L'Hirondelle estreia com o estande imersivo “A Travessia” na edição pós-lançamento.</div>
+</div>
+<div class="card reveal d2">
+<span class="pil" data-en="Pillar 2 · Prestige">Pilar 2 · Prestígio</span>
+<h3 data-en="Taste France Brasil Award">Prêmio Taste France Brasil</h3>
+<div class="meta" data-en="May · São Paulo · French Consular Residence · institutional sponsorship">Maio · São Paulo · Residência Consular da França · patrocínio institucional</div>
+<p data-en="Best Baguette &amp; Croissant contest run by the French Embassy and Business France, with a Meilleur Ouvrier de France jury. Lesaffre already sponsored the 1st edition — a natural door for L'Hirondelle to take the lead in the next one.">Concurso da Melhor Baguete &amp; Croissant organizado pela Embaixada da França e Business France, com júri Meilleur Ouvrier de France. A Lesaffre já patrocinou a 1ª edição — porta natural para a L'Hirondelle assumir protagonismo na próxima.</p>
+<div class="how" data-en="<b>How to enter:</b> direct contact with Business France (SP/RJ) leveraging the relationship opened by the 2026 sponsorship; negotiate dedicated naming."><b>Como entrar:</b> contato direto com a Business France (SP/RJ) usando a relação aberta pelo patrocínio 2026; negociar naming dedicado.</div>
+<span class="pp" data-en='Sponsorship <b>R$ 40–90 mil</b> + on-site activation <b>R$ 15–30 mil</b> · to be confirmed'>Patrocínio <b>R$ 40–90 mil</b> + ativação local <b>R$ 15–30 mil</b> · a confirmar</span>
+</div>
+<div class="card reveal d3">
+<span class="pil" data-en="Pillar 3 · Capillarity">Pilar 3 · Capilaridade</span>
+<h3>Goût de France / Good France</h3>
+<div class="meta" data-en="National week (date set per edition) · 8 Brazilian capitals · official ingredient supplier">Semana nacional (data por edição) · 8 capitais brasileiras · fornecedor oficial de insumos</div>
+<p data-en="Festival by the French Ministry of Foreign Affairs: each partner bakery creates a French concept menu with L'Hirondelle. Official seal, Embassy social coverage and local earned media — the most cost-efficient action on the calendar.">Festival do Ministério das Relações Exteriores da França: cada padaria parceira cria um menu-conceito francês com L'Hirondelle. Selo oficial, cobertura das redes da Embaixada e mídia espontânea local — a ação mais custo-eficiente do calendário.</p>
+<div class="how" data-en="<b>How to enter:</b> free registration of partner bakeries with the Embassy; the brand enters as ingredient partner for the selected ambassador bakeries."><b>Como entrar:</b> inscrição gratuita das padarias junto à Embaixada; a marca entra como parceira de insumos das padarias-embaixadoras selecionadas.</div>
+<span class="pp" data-en='Kit per bakery <b>R$ 3–5 mil</b> + national content/press <b>R$ 20–40 mil</b>'>Kit por padaria <b>R$ 3–5 mil</b> + conteúdo/imprensa nacional <b>R$ 20–40 mil</b></span>
+</div>
+<div class="card reveal d4">
+<span class="pil" data-en="Pillar 4 · Launch">Pilar 4 · Lançamento</span>
+<h3>Le Cordon Bleu — Culinary Village</h3>
+<div class="meta" data-en="On demand · Vila Madalena, SP · 700 m² · one-off rental or ongoing partnership">Sob agenda · Vila Madalena, SP · 700 m² · locação pontual ou parceria contínua</div>
+<p data-en="Professional kitchen, dining room and full hospitality with the century-old signature of the French institution — the ideal home for “Le Vol”: a dinner-experience with masterclass, guided tasting and the film reveal.">Cozinha profissional, sala de jantar e hospitalidade completa com a assinatura centenária da instituição francesa — a casa ideal para o “Le Vol”: jantar-experiência com aula magna, degustação guiada e revelação do filme.</p>
+<div class="how" data-en="<b>How to enter:</b> corporate events desk at cordonbleu.edu — brief the format, quote space + catering + chef team."><b>Como entrar:</b> comercial de eventos via cordonbleu.edu — briefing do formato, cotação de espaço + catering + equipe de chefs.</div>
+<span class="pp" data-en='Evening for 80–120 guests <b>R$ 60–120 mil</b>'>Noite para 80–120 convidados <b>R$ 60–120 mil</b></span>
+</div>
+</div>
+<div class="rangecard reveal" style="margin-top:26px">
+<h3 data-en="Estimated investment per action">Investimento estimado por ação</h3>
+<div class="sub" data-en="Planning ranges (min–max, R$ thousand) — final quotes before budget approval. We suggest a +10% contingency on events.">Faixas de planejamento (mín–máx, R$ mil) — cotações finais antes da aprovação da verba. Sugerimos +10% de contingência sobre eventos.</div>
+<div class="evr"><div class="nm" data-en="Factory trip · France">Viagem à fábrica · França</div><div class="trk"><span class="fill" data-l="57.9" data-w="42.1" style="left:57.9%"></span></div><div class="vv">R$ 220–380 mil</div></div>
+<div class="evr"><div class="nm" data-en="Taste France Brazil">Taste France Brasil</div><div class="trk"><span class="fill" data-l="14.5" data-w="17.1" style="left:14.5%"></span></div><div class="vv">R$ 55–120 mil</div></div>
+<div class="evr"><div class="nm" data-en="“Le Vol” · Le Cordon Bleu">“Le Vol” · Le Cordon Bleu</div><div class="trk"><span class="fill" data-l="15.8" data-w="15.8" style="left:15.8%"></span></div><div class="vv">R$ 60–120 mil</div></div>
+<div class="evr"><div class="nm" data-en="Roadshow · 6–8 regions">Roadshow · 6–8 praças</div><div class="trk"><span class="fill" data-l="14.5" data-w="11.8" style="left:14.5%"></span></div><div class="vv">R$ 55–100 mil</div></div>
+<div class="evr"><div class="nm" data-en="Goût de France · 8 capitals">Goût de France · 8 capitais</div><div class="trk"><span class="fill" data-l="11.6" data-w="9.5" style="left:11.6%"></span></div><div class="vv">R$ 44–80 mil</div></div>
+</div>
 </div>
 </div>
 </section>
@@ -1109,11 +1215,11 @@ body.modal-open{overflow:hidden}
 <p class="lead lt reveal d2" data-en="The swallow's arrival must be felt where the decision happens: at the trade, the distributor and the point of sale.">A chegada da andorinha precisa ser sentida onde a decisão acontece: no trade, no distribuidor e no PDV.</p>
 <div class="grid g3" style="margin-top:42px">
 <div class="glass reveal d1"><div class="icrc"><svg viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="4"></rect><path d="M8 21h8M12 18v3"></path></svg></div><h3 data-en="Industry trade show stand">Estande em feira do setor</h3><p data-en="Immersive &quot;The Crossing&quot; booth: a Paris→Brazil tunnel, a live oven with the ambassadors, the swallow-flight wall and shareable photos. &lt;b&gt;Next edition (post-launch)&lt;/b&gt; — the brand will not be at this year's FIPAN.">Estande imersivo "A Travessia": túnel Paris→Brasil, forno ao vivo com os embaixadores, parede do voo da andorinha e fotos para compartilhar. <b>Próxima edição (pós-lançamento)</b> — a marca não estará na FIPAN deste ano.</p></div>
-<div class="glass reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01"></path></svg></div><h3 data-en="Full POS kit">Kit PDV completo</h3><p data-en="Counter display, wobblers, shelf strip, &quot;L'Hirondelle sold here&quot; seal, swallow mobile and a window sticker for the ambassador bakery.">Display de balcão, wobblers, faixa de gôndola, selo "aqui tem L'Hirondelle", móbile da andorinha e adesivo de vitrine para a padaria-embaixadora.</p></div>
-<div class="glass reveal d3"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"></path><circle cx="12" cy="9" r="2"></circle></svg></div><h3 data-en="L'Hirondelle House (pop-up)">Casa L'Hirondelle (pop-up)</h3><p data-en="A pop-up boulangerie with a sensory experience: aroma, tasting and content.">Boulangerie efêmera com experiência sensorial: aroma, degustação e conteúdo.</p></div>
-<div class="glass reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M20 7h-9M14 17H5M17 4l3 3-3 3M7 14l-3 3 3 3"></path></svg></div><h3 data-en="Distributor trade">Trade do distribuidor</h3><p data-en="Sales-incentive material, team training and a pitch kit for the rep to open doors with the brand story.">Material de incentivo de venda, treinamento de equipe e kit de apresentação para o vendedor abrir portas com a história da marca.</p></div>
-<div class="glass reveal d3"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"></path><path d="M8 13h8"></path></svg></div><h3 data-en="Brand recipe book">Receituário de marca</h3><p data-en="A book of French recipes with L'Hirondelle for the baker — a useful tool that keeps the brand on the bench every day.">Caderno de receitas francesas com L'Hirondelle para o padeiro — ferramenta útil que mantém a marca na bancada todos os dias.</p></div>
-<div class="glass reveal d4"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"></path></svg></div><h3 data-en="QR experience">QR experiência</h3><p data-en="From the pack to the film, to the brand's origin and to enrollment in the loyalty program — closing the physical→digital loop.">Da embalagem ao filme, à origem da marca e ao cadastro no programa de relacionamento — fechando o ciclo físico→digital.</p></div>
+<div class="glass reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01"></path></svg></div><h3 data-en="Full POS kit">Kit PDV completo</h3><p data-en="Counter display, wobblers, shelf strip, &quot;L'Hirondelle sold here&quot; seal, swallow mobile and a window sticker for the ambassador bakery.">Display de balcão, wobblers, faixa de gôndola, selo "aqui tem L'Hirondelle", móbile da andorinha e adesivo de vitrine para a padaria-embaixadora.</p><span class="pp" data-en="<b>R$ 100–190</b>/bakery · wave of 500: <b>R$ 50–95 mil</b>"><b>R$ 100–190</b>/padaria · onda de 500: <b>R$ 50–95 mil</b></span><p style="margin-top:10px"><button class="open-modal" data-en="📋 See kit breakdown (500 units)" data-modal-open="modal-kitpdv">📋 Ver detalhamento do kit (500 un.)</button></p></div>
+<div class="glass reveal d3"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"></path><circle cx="12" cy="9" r="2"></circle></svg></div><h3 data-en="L'Hirondelle House (pop-up)">Casa L'Hirondelle (pop-up)</h3><p data-en="A pop-up boulangerie with a sensory experience: aroma, tasting and content.">Boulangerie efêmera com experiência sensorial: aroma, degustação e conteúdo.</p><span class="pp" data-en="30 days, high-traffic venue <b>R$ 120–220 mil</b>">30 dias em local de alto fluxo <b>R$ 120–220 mil</b></span></div>
+<div class="glass reveal d2"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M20 7h-9M14 17H5M17 4l3 3-3 3M7 14l-3 3 3 3"></path></svg></div><h3 data-en="Distributor trade">Trade do distribuidor</h3><p data-en="Sales-incentive material, team training and a pitch kit for the rep to open doors with the brand story.">Material de incentivo de venda, treinamento de equipe e kit de apresentação para o vendedor abrir portas com a história da marca.</p><span class="pp" data-en="Sales kit + training <b>R$ 12–20 mil</b>/region">Kit de vendas + treinamento <b>R$ 12–20 mil</b>/praça</span></div>
+<div class="glass reveal d3"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"></path><path d="M8 13h8"></path></svg></div><h3 data-en="Brand recipe book">Receituário de marca</h3><p data-en="A book of French recipes with L'Hirondelle for the baker — a useful tool that keeps the brand on the bench every day.">Caderno de receitas francesas com L'Hirondelle para o padeiro — ferramenta útil que mantém a marca na bancada todos os dias.</p><span class="pp" data-en="5,000 copies (R$ 7–11/copy) <b>R$ 35–55 mil</b>">5.000 exemplares (R$ 7–11/ex.) <b>R$ 35–55 mil</b></span></div>
+<div class="glass reveal d4"><div class="icrc"><svg viewbox="0 0 24 24"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"></path></svg></div><h3 data-en="QR experience">QR experiência</h3><p data-en="From the pack to the film, to the brand's origin and to enrollment in the loyalty program — closing the physical→digital loop.">Da embalagem ao filme, à origem da marca e ao cadastro no programa de relacionamento — fechando o ciclo físico→digital.</p><span class="pp" data-en="Landing + loyalty integration <b>R$ 25–45 mil</b>">Landing + integração ao relacionamento <b>R$ 25–45 mil</b></span></div>
 </div>
 </div>
 </section>
@@ -1219,6 +1325,44 @@ body.modal-open{overflow:hidden}
 </div>
 </div>
 </section>
+
+<!-- ============ MÍDIA ONLINE · TRÁFEGO ============ -->
+<section class="dark" data-nav="Mídia Online" data-nav-en="Online Media" id="trafego">
+<span class="section-tag">★</span>
+<div class="wrap">
+<span class="kicker lt reveal" data-en="Online media · paid traffic">Mídia online · tráfego pago</span>
+<h2 class="title lt reveal d1" data-en="The flight gains paid traction.">O voo ganha tração paga.</h2>
+<p class="lead lt reveal d2" data-en="An always-on strategy in 4 phases, with three pressure scenarios. This is precision media: B2B segmentation across the baking ecosystem — bakers, distributors and food service — geo-targeted to the selective rollout regions, with reinforced pressure in launch month. It gives scale to the film, builds the remarketing base and sustains presence throughout year 1.">Estratégia sempre-on em 4 fases, com três cenários de pressão. É mídia de precisão: segmentação B2B no ecossistema da panificação — padeiros, distribuidores e food service — geolocalizada nas praças do rollout seletivo, com pressão reforçada no mês de lançamento. Dá escala ao filme, forma a base de remarketing e sustenta presença ao longo do ano 1.</p>
+<div class="grid g4" style="margin-top:42px">
+<div class="glass reveal d1"><div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#FFB65C;font-weight:900" data-en="Phase 1 · Month 1">Fase 1 · Mês 1</div><h3 data-en="Teaser" style="font-size:19px;margin:8px 0 8px">Teaser</h3><p data-en="Spark curiosity: introduce the visual identity, build reach and frequency, prepare the audience for launch. Instagram, YouTube and LinkedIn at lower pressure." style="font-size:13.5px;color:rgba(255,255,255,.85)">Gerar curiosidade: introduzir a identidade visual, construir alcance e frequência, preparar a audiência. Instagram, YouTube e LinkedIn em menor pressão.</p></div>
+<div class="glass reveal d2"><div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#FFB65C;font-weight:900" data-en="Phase 2 · Month 2">Fase 2 · Mês 2</div><h3 data-en="Launch" style="font-size:19px;margin:8px 0 8px">Lançamento</h3><p data-en="Officially introduce the brand: arrival in Brazil, the Lesaffre Group endorsement, qualified traffic. YouTube and Instagram at higher intensity; LinkedIn for B2B." style="font-size:13.5px;color:rgba(255,255,255,.85)">Apresentar oficialmente a marca: chegada ao Brasil, endosso do Grupo Lesaffre, tráfego qualificado. YouTube e Instagram intensos; LinkedIn para B2B.</p></div>
+<div class="glass reveal d3"><div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#FFB65C;font-weight:900" data-en="Phase 3 · Months 3–4">Fase 3 · Meses 3–4</div><h3 data-en="Warm-up" style="font-size:19px;margin:8px 0 8px">Aquecimento</h3><p data-en="Deepen brand knowledge: explain differentiators, show applications, drive engagement and build the remarketing base. Strong Instagram and YouTube; technical content on LinkedIn." style="font-size:13.5px;color:rgba(255,255,255,.85)">Aprofundar conhecimento: explicar diferenciais, mostrar aplicações, estimular engajamento e formar a base de remarketing. Instagram e YouTube fortes; conteúdo técnico no LinkedIn.</p></div>
+<div class="glass reveal d4"><div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#FFB65C;font-weight:900" data-en="Phase 4 · Months 5–12">Fase 4 · Meses 5–12</div><h3 data-en="Always-on" style="font-size:19px;margin:8px 0 8px">Manutenção</h3><p data-en="Sustain frequency and evolve into relationship: reinforce uses, support sales pushes and work remarketing. Continuous Instagram; YouTube on-demand; LinkedIn for B2B bursts." style="font-size:13.5px;color:rgba(255,255,255,.85)">Sustentar frequência e evoluir para relacionamento: reforçar usos, apoiar ações comerciais e trabalhar remarketing. Instagram contínuo; YouTube pontual; LinkedIn em reforços B2B.</p></div>
+</div>
+<div class="grid g2" style="margin-top:26px">
+<div class="glass reveal d1">
+<h3 data-en="Monthly investment per phase" style="font-size:16px;margin-bottom:4px">Investimento mensal por fase</h3>
+<div style="font-size:12px;color:rgba(255,255,255,.7);margin-bottom:8px" data-en="Net media spend (R$/month) — content production and management not included.">Veiculação líquida (R$/mês) — produção de peças e gestão à parte.</div>
+<div class="gchart" id="gc1">
+<div class="grp"><div class="bars"><div class="gb e" data-h="13" title="R$ 1.800"></div><div class="gb r" data-h="23" title="R$ 3.150"></div><div class="gb a" data-h="33" title="R$ 4.550"></div></div><div class="gl2" data-en="Teaser<br>Month 1">Teaser<br>Mês 1</div></div>
+<div class="grp"><div class="bars"><div class="gb e" data-h="40" title="R$ 5.400"></div><div class="gb r" data-h="69" title="R$ 9.450"></div><div class="gb a" data-h="100" title="R$ 13.650"></div></div><div class="gl2" data-en="Launch<br>Month 2">Lançamento<br>Mês 2</div></div>
+<div class="grp"><div class="bars"><div class="gb e" data-h="22" title="R$ 2.950"></div><div class="gb r" data-h="38" title="R$ 5.175"></div><div class="gb a" data-h="55" title="R$ 7.475"></div></div><div class="gl2" data-en="Warm-up<br>Months 3–4">Aquecimento<br>Meses 3–4</div></div>
+<div class="grp"><div class="bars"><div class="gb e" data-h="18" title="R$ 2.400"></div><div class="gb r" data-h="31" title="R$ 4.275"></div><div class="gb a" data-h="45" title="R$ 6.175"></div></div><div class="gl2" data-en="Always-on<br>Months 5–12">Manutenção<br>Meses 5–12</div></div>
+</div>
+<div class="cleg2"><span><i style="background:#7FB7E8"></i><span data-en="Essential">Essencial</span></span><span><i style="background:#F08A00"></i><span data-en="Recommended">Recomendado</span></span><span><i style="background:#fff"></i><span data-en="Accelerated">Acelerado</span></span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div class="grid g3" style="gap:14px">
+<div class="scn reveal d1"><div class="t" data-en="Essential">Essencial</div><div class="v">R$ 32,3<small style="font-size:15px"> mil</small></div><div class="m" data-en="year 1 · minimum viable presence">ano 1 · presença mínima viável</div></div>
+<div class="scn hot reveal d2"><div class="flag" data-en="Recommended">Recomendado</div><div class="t" data-en="Intermediate">Intermediário</div><div class="v">R$ 57,2<small style="font-size:15px"> mil</small></div><div class="m" data-en="year 1 · consistent pressure across 3 channels">ano 1 · pressão consistente nos 3 canais</div></div>
+<div class="scn reveal d3"><div class="t" data-en="Accelerated">Acelerado</div><div class="v">R$ 82,6<small style="font-size:15px"> mil</small></div><div class="m" data-en="year 1 · faster share of mind">ano 1 · share of mind mais rápido</div></div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
 <!-- ============ CONCEITOS DE CAMPANHA ============ -->
 <section data-nav="Conceitos de Campanha" data-nav-en="Campaign Concepts" id="conceitos">
 <span class="section-tag">★</span>
@@ -1456,6 +1600,55 @@ body.modal-open{overflow:hidden}
 </div>
 </section>
 <!-- ============ 14 BUDGET ============ -->
+
+<!-- ============ RESUMO DE INVESTIMENTO ============ -->
+<section data-nav="Investimento" data-nav-en="Investment" id="investimento">
+<span class="section-tag">★</span>
+<div class="wrap">
+<span class="kicker reveal" data-en="Investment summary">Resumo de investimento</span>
+<h2 class="title reveal d1" data-en="How much it costs to make the swallow fly.">Quanto custa fazer a andorinha voar.</h2>
+<p class="lead reveal d2" data-en="Everything consolidated: the closed film production plus planning estimates for events, activations, POS and online media. Ranges built from public references of each action — final quotes before budget approval.">Tudo consolidado: a produção do filme (fechada) mais as estimativas de planejamento para eventos, ativações, PDV e mídia online. Faixas construídas a partir de referências públicas de cada ação — cotações finais antes da aprovação da verba.</p>
+<div class="grid g3" style="margin-top:42px;align-items:stretch">
+<div class="hzn reveal d1">
+<div class="hh" data-en="Horizon 1 · Foundation">Horizonte 1 · Fundação</div>
+<div class="vr">R$ 184–309<small style="font-size:15px"> mil</small></div>
+<p data-en="The lean launch: film + Essential media + “Le Vol” + POS kit (500 bakeries) + QR journey. The minimum for the arrival to be felt in trade and at the counter.">O lançamento enxuto: filme + mídia Essencial + “Le Vol” + kit PDV (500 padarias) + jornada QR. O mínimo para a chegada ser sentida no trade e no balcão.</p>
+<div class="mini"><i data-w="22"></i></div>
+</div>
+<div class="hzn hot reveal d2">
+<div class="flag" data-en="Recommended">Recomendado</div>
+<div class="hh" data-en="Horizon 2 · Consistent presence">Horizonte 2 · Presença consistente</div>
+<div class="vr">R$ 343–569<small style="font-size:15px"> mil</small></div>
+<p data-en="Foundation + Goût de France (8 capitals), regional roadshow, recipe book and Recommended media. Capillarity and relationship on top of the launch — the plan's best cost-benefit.">Fundação + Goût de France (8 capitais), roadshow regional, receituário e mídia Recomendada. Capilaridade e relacionamento sobre o lançamento — o melhor custo-benefício do plano.</p>
+<div class="mini"><i data-w="40"></i></div>
+</div>
+<div class="hzn reveal d3">
+<div class="hh" data-en="Horizon 3 · Full year 1">Horizonte 3 · Ano 1 completo</div>
+<div class="vr">R$ 0,82–1,41<small style="font-size:15px"> mi</small></div>
+<p data-en="Everything: + Taste France, 30-day pop-up House, distributor trade, France factory trip and Accelerated media. The full statement across the rollout regions.">Tudo: + Taste France, Casa pop-up 30 dias, trade do distribuidor, viagem à fábrica na França e mídia Acelerada. O statement completo nas praças do rollout.</p>
+<div class="mini"><i data-w="100"></i></div>
+</div>
+</div>
+<div class="rangecard reveal" style="margin-top:26px">
+<h3 data-en="Line by line — what makes up each horizon">Linha a linha — o que compõe cada horizonte</h3>
+<div class="sub" data-en="Values in reais · planning estimates, except the film (approved production proposal).">Valores em reais · estimativas de planejamento, exceto o filme (proposta de produção aprovada).</div>
+<div class="sumrow"><div class="nm" data-en="Launch film · full package<small>30” + 3 teasers + cuts · voiceover separate</small>">Filme de lançamento · pacote completo<small>30” + 3 teasers + cortes · locução à parte</small></div><span class="chip ok" data-en="Closed">Fechado</span><div class="vv">R$ 16.880</div></div>
+<div class="sumrow"><div class="nm" data-en="Online media · year 1<small>by scenario (Essential → Accelerated)</small>">Mídia online · ano 1<small>conforme cenário (Essencial → Acelerado)</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 32,3–82,6 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="“Le Vol” event · Le Cordon Bleu<small>80–120 guests, one evening</small>">Evento “Le Vol” · Le Cordon Bleu<small>80–120 convidados, uma noite</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 60–120 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="POS kit · wave 1 (500 bakeries)<small>display, wobbler, seal, mobile, window</small>">Kit PDV · onda 1 (500 padarias)<small>display, wobbler, selo, móbile, vitrine</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 50–95 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="QR experience · digital journey<small>landing + Privilège integration</small>">QR experiência · jornada digital<small>landing + integração ao Privilège</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 25–45 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Goût de France · 8 capitals<small>kits per bakery + content/press</small>">Goût de France · 8 capitais<small>kits por padaria + conteúdo/imprensa</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 44–80 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Roadshow · 6–8 regions<small>masterclasses with ambassadors</small>">Roadshow · 6–8 praças<small>masterclasses com embaixadores</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 55–100 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Brand recipe book · 5,000 copies<small>64-page core + hardcover</small>">Receituário de marca · 5.000 ex.<small>miolo 64 pág. + capa dura</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 35–55 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Taste France Brazil · sponsorship<small>naming + on-site activation</small>">Taste France Brasil · patrocínio<small>naming + ativação na cerimônia</small></div><span class="chip cf" data-en="To confirm">A confirmar</span><div class="vv">R$ 55–120 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="L'Hirondelle House · 30-day pop-up<small>build + operation, high traffic</small>">Casa L'Hirondelle · pop-up 30 dias<small>montagem + operação em alto fluxo</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 120–220 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Distributor trade · 5 regions<small>sales kit + training</small>">Trade do distribuidor · 5 praças<small>kit de vendas + treinamento</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 60–100 mil</div></div>
+<div class="sumrow"><div class="nm" data-en="Factory trip · France<small>group of 8–12</small>">Viagem à fábrica · França<small>grupo de 8–12 pessoas</small></div><span class="chip est" data-en="Estimate">Estimado</span><div class="vv">R$ 220–380 mil</div></div>
+</div>
+<div class="notecard reveal" data-en="<b>Planning notes:</b> ranges are planning estimates built from public references of each action — final quotes are confirmed with each organizer before budget approval. We suggest a <b>+10% contingency</b> on the events block. The Taste France value is confirmed directly with Business France / the French Embassy."><b>Notas de planejamento:</b> as faixas são estimativas de planejamento construídas a partir de referências públicas de cada ação — as cotações finais são confirmadas com cada organizador antes da aprovação da verba. Sugerimos <b>+10% de contingência</b> sobre o bloco de eventos. O valor do Taste France é confirmado diretamente com a Business France / Embaixada da França.</div>
+</div>
+</section>
+
 <!-- ============ FOOTER ============ -->
 <footer data-nav="Encerramento" data-nav-en="Closing" id="fim">
 <p class="fmerci" data-en="Merci.">Merci.</p>
@@ -1641,6 +1834,7 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
 <a data-i="14" href="#teasers"><b>Teasers</b><i data-en="Phase 1 · pre-launch">Fase 1 · pré-lançamento</i></a>
 <a data-i="15" href="#conteudo"><b data-en="Content &amp; Social">Conteúdo &amp; Social</b><i data-en="Real campaign pieces in feed">Peças reais da campanha no feed</i></a>
 <a data-i="16" href="#social"><b data-en="Social &amp; Digital">Social &amp; Digital</b><i data-en="The 4 content pillars">Os 4 pilares de conteúdo</i></a>
+<a href="#trafego"><b data-en="Online Media">Mídia Online</b><i data-en="Paid traffic · 3 scenarios">Tráfego pago · 3 cenários</i></a>
 </div>
 <div class="mg">
 <div class="mg-h" data-en="Experience">Experiência</div>
@@ -1657,6 +1851,7 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
 <a data-i="24" href="#funil"><b data-en="Launch Funnel">Funil de Lançamento</b><i data-en="From reach to advocacy">Do alcance à advocacia</i></a>
 <a data-en="&lt;b&gt;Journey &amp;amp; CRM&lt;/b&gt;&lt;i&gt;Touchpoints by phase&lt;/i&gt;" data-i="25" href="#crm"><b>Jornada &amp; CRM</b><i data-en="Touchpoints by phase">Pontos de contato por fase</i></a>
 <a data-i="26" href="#metas"><b data-en="Goals &amp; Forecasts">Metas &amp; Projeções</b><i data-en="What we expect to win">O que esperamos ganhar</i></a>
+<a href="#investimento"><b data-en="Investment Summary">Resumo de Investimento</b><i data-en="Film, events, POS and media consolidated">Filme, eventos, PDV e mídia consolidados</i></a>
 <a data-i="27" href="#cronograma"><b data-en="Timeline">Cronograma</b><i data-en="Three acts of launch">Três atos do lançamento</i></a>
 </div>
 <div class="mg">
@@ -1667,6 +1862,32 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
 </div>
 </div>
 <!-- ===== MODAIS ===== -->
+<div aria-hidden="true" class="modal" id="modal-kitpdv">
+<div class="modal-backdrop" data-close=""></div>
+<div class="modal-inner">
+<button aria-label="Fechar" class="modal-close" data-close="">×</button>
+<div class="modal-head">
+<div class="modal-eyebrow" data-en="POS Kit · 500-unit run">Kit PDV · tiragem de 500</div>
+<h3 data-en="Materials breakdown">Detalhamento de materiais</h3>
+<p data-en="Market reference values — close with at least 2 print-shop quotes before approving.">Valores de referência de mercado — fechar com pelo menos 2 orçamentos de gráfica antes de aprovar.</p>
+</div>
+<div class="modal-body">
+<table class="kittable">
+<tr><th data-en="Item">Item</th><th data-en="Specification">Especificação</th><th data-en="Unit cost">Custo unit.</th><th data-en="500 units">500 unidades</th></tr>
+<tr><td data-en="Counter display">Display de balcão</td><td data-en="Laminated triplex board, assembled" style="color:var(--muted)">Papel cartão triplex laminado, montado</td><td class="v">R$ 20–35</td><td class="v">R$ 10,0–17,5 mil</td></tr>
+<tr><td data-en="Wobbler">Wobbler</td><td data-en="0.3 mm PS + stem, UV print" style="color:var(--muted)">PS 0,3 mm + haste, impressão UV</td><td class="v">R$ 3–6</td><td class="v">R$ 1,5–3,0 mil</td></tr>
+<tr><td data-en="Shelf strip">Faixa de gôndola</td><td data-en="Adhesive PVC strip" style="color:var(--muted)">Régua em PVC adesivada</td><td class="v">R$ 8–15</td><td class="v">R$ 4,0–7,5 mil</td></tr>
+<tr><td data-en="“L'Hirondelle here” seal">Selo “Aqui tem L'Hirondelle”</td><td data-en="Round BOPP sticker, 5 cm" style="color:var(--muted)">Adesivo redondo BOPP, 5 cm</td><td class="v">R$ 0,80–1,50</td><td class="v">R$ 0,4–0,75 mil</td></tr>
+<tr><td data-en="Swallow mobile">Móbile da andorinha</td><td data-en="Die-cut hanging PS" style="color:var(--muted)">PS recortado, pendurado</td><td class="v">R$ 10–18</td><td class="v">R$ 5,0–9,0 mil</td></tr>
+<tr><td data-en="Window sticker">Adesivo de vitrine</td><td data-en="Die-cut vinyl, ~30×40 cm" style="color:var(--muted)">Vinil recortado, ~30×40 cm</td><td class="v">R$ 30–55</td><td class="v">R$ 15,0–27,5 mil</td></tr>
+<tr><td data-en="Kitting &amp; packaging">Kitting e embalagem</td><td data-en="Kit assembly + individual envelope" style="color:var(--muted)">Montagem do kit + envelope individual</td><td class="v">R$ 8–14</td><td class="v">R$ 4,0–7,0 mil</td></tr>
+<tr><td data-en="National freight">Frete nacional</td><td data-en="Distribution across regions" style="color:var(--muted)">Distribuição em múltiplas praças</td><td class="v">R$ 20–45</td><td class="v">R$ 10,0–22,5 mil</td></tr>
+<tr class="tt"><td data-en="Total per kit / 500 kits">Total por kit / 500 kits</td><td>—</td><td class="v">R$ 100–190</td><td class="v">R$ 50–95 mil</td></tr>
+</table>
+<div class="notecard" data-en="<b>Where to trim if budget tightens:</b> the window sticker is the most expensive item (large die-cut vinyl) — first candidate to be downsized or made optional for small storefronts, keeping the essentials (display + wobbler + seal) intact."><b>Onde cortar se a verba apertar:</b> o adesivo de vitrine é o item mais caro (vinil recortado grande) — primeiro candidato a reduzir de tamanho ou tornar opcional para fachadas pequenas, preservando o essencial (display + wobbler + selo).</div>
+</div>
+</div>
+</div>
 <div aria-hidden="true" class="modal" id="modal-roteiro">
 <div class="modal-backdrop" data-close=""></div>
 <div class="modal-inner">
@@ -1855,5 +2076,17 @@ var p=document.getElementById('gpw'); if(p) p.addEventListener('keydown',functio
     }
   });
 })();</script>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+    e.target.querySelectorAll('.gb[data-h]').forEach(function(b,i){setTimeout(function(){b.style.height=b.dataset.h+'%';},90*i);});
+    e.target.querySelectorAll('.fill[data-w]').forEach(function(b,i){setTimeout(function(){b.style.width=b.dataset.w+'%';},110*i);});
+    e.target.querySelectorAll('.mini i[data-w]').forEach(function(b){b.style.width=b.dataset.w+'%';});
+    io.unobserve(e.target);
+  });},{threshold:.3});
+  document.querySelectorAll('.gchart,.rangecard,.hzn').forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
