@@ -224,7 +224,6 @@ body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:#0a0a0
 </style>
 </head>
 <body>
-<div class="gate" id="gate"><form id="gateForm"><h3>Painel Lesaffre · Sala TV</h3><p>Apresentação TGT Studio · acesso restrito</p><input type="password" id="gatePw" placeholder="senha" autocomplete="off" autofocus><button type="submit">Entrar</button><div class="err" id="gateErr"></div></form></div>
 <div class="deck" id="deck">
   <div class="progress"><i id="bar"></i></div>
   <nav class="topnav" id="topnav">
@@ -451,12 +450,6 @@ body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:#0a0a0
 
 <script>
 
-(function(){const H='5b9447929a0e59a19b229844293bc0f60e2c8bdface05cd230e3bec407974a0b';const g=document.getElementById('gate');
- async function sha(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');}
- try{if(sessionStorage.getItem('tgt_gate')===H)g.classList.add('off');}catch(e){}
- document.getElementById('gateForm').addEventListener('submit',async e=>{e.preventDefault();const v=document.getElementById('gatePw').value.trim();
-  if(await sha(v)===H){g.classList.add('off');try{sessionStorage.setItem('tgt_gate',H);}catch(_){}}else{document.getElementById('gateErr').textContent='Senha incorreta.';}});
-})();
 const deck=document.getElementById('deck');
 const slides=[...deck.querySelectorAll('.slide')];
 const bar=document.getElementById('bar');
